@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 50px;
+}
+
+html {
+    background-color: #000000;
+    background-attachment: scroll;
+}
+
+header {
+    background: rgb(249,255,0);
+    background: linear-gradient(90deg, rgba(249,255,0,1) 0%, rgba(0,0,0,1) 6%, rgba(0,0,0,1) 87%, rgba(249,255,0,1) 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 1cm;
+}
+
+nav {
+    font-family: 'BioRhyme', serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #ffff99;
+    color: #000000;
+}
+
+nav a { 
+    color: #ffff99;
+    text-decoration: none;
+    padding: 0px 10px;
+
+    
+}
+
+main {
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 10rem;
+}
+
+.imgHome1:hover{
+    filter: grayscale(100%);
+    
+}
+
+.imgHome1 {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    transition: filter 1s ease-out 100ms
+
+}
+
+h1 {
+    font-family: 'BioRhyme', serif;
+    text-align: center;
+    font-weight: bold ;
+    text-justify: distribute;
+    margin: 2rem 2rem 2rem 2rem;
+    color: #ffff99;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'BioRhyme', serif;
+    text-align: center;
+    font-weight: bold ;
+    text-justify: distribute;
+    margin: 4rem 4rem 4rem 4rem;
+    color: #ffff99;
+    font-size: 1.5rem;
+}
+
+.p1 {
+    font-family: 'BioRhyme', serif;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: left;
+    padding: 50px 0 50px;
+    margin: 50px 0 50px;
+}
+
+.p2 {
+    font-family: 'BioRhyme', serif;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: right;
+    padding: 50px 0 50px;
+    margin: 50px 0 50px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "imgloser textloser textloser"
+    "textcoach textcoach imgcoach"
+    "img1 img2 img3"
+    ;
+}
+
+.imgloser { grid-area: imgloser; }
+.textloser { grid-area: textloser; }
+.imgcoach { grid-area: imgcoach; }
+.textcoach { grid-area: textcoach; }
+.img1 { grid-area: img1; }
+.img2 { grid-area: img2; }
+.img3 { grid-area: img3; }
+
+.imgHome1 {height: 100%; width: 100%; padding: 2rem; border-radius: 1cm;}
+
+.imgHome2 {
+    border-radius: 8px;
+    width: 50%;
+    height: 100%; width: 100%; padding: 2rem; border-radius: 1cm;
+}
+
+.containerGal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "imgGal1 imgGal1 imgGal1 imgGal2"
+    "imgGal3 imgGal4 imgGal4 imgGal5"   
+    "imgGal6 imgGal6 imgGal7 imgGal8";
+}
+
+.imgGal1 { grid-area: imgGal1; }
+.imgGal2 { grid-area: imgGal2; }
+.imgGal3 { grid-area: imgGal3; }
+.imgGal4 { grid-area: imgGal4; }
+.imgGal5 { grid-area: imgGal5; }
+.imgGal6 { grid-area: imgGal6; }
+.imgGal7 { grid-area: imgGal7; }
+.imgGal8 { grid-area: imgGal8; }
+
+
+.titAboutUs {
+    text-align: left;
+    margin-left: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    right: 1rem;
+}
+.titAboutUs2 {
+    text-align:right;
+    margin-right: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    right: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color:  #262626;
+    color: white;
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    font-family: 'BioRhyme', serif;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+h3 {
+    text-align:left;
+    font-family: 'BioRhyme', serif;
+    font-weight: bold;
+}
+
+footer ul li { 
+    text-align: left;
+    font-family: 'Space Mono', monospace;
+    list-style: none;
+    font-size: 1rem;
+    padding-left: 10px;
+    
+} 
+
+.navFooter {
+    padding-bottom: 20px;
+}
+
+.aboutMain {
+    display: flex;
+    flex-direction: column;
+}
+
+footer li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: #ffff99;
+}
+
+footer p {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+}
+
