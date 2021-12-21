@@ -7,6 +7,11 @@
 
 body {
     margin: 50px;
+    background-color: #000000;
+}
+
+main {
+    color: #000000;
 }
 
 html {
@@ -27,11 +32,13 @@ nav {
     font-family: 'BioRhyme', serif;
     font-size: 1.5rem;
     text-align: center;
+    text-decoration: none;
 }
 
 nav a:hover {
     background-color: #ffff99;
     color: #000000;
+    text-decoration: none;
 }
 
 nav a { 
@@ -70,8 +77,12 @@ h1 {
     font-weight: bold ;
     text-justify: distribute;
     margin: 2rem 2rem 2rem 2rem;
-    color: #ffff99;
+    color: #ffffff;
     font-size: 3rem;
+}
+
+h1:hover {
+    color: #ffff99;
 }
 
 h2 {
@@ -132,28 +143,74 @@ h2 {
     height: 100%; width: 100%; padding: 2rem; border-radius: 1cm;
 }
 
+h5 {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+}
+.carousel-item p {
+    color: #ffffff;
+    background-color: #000000;
+}
+
 .containerGal {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "imgGal1 imgGal1 imgGal1 imgGal2"
-    "imgGal3 imgGal4 imgGal4 imgGal5"   
-    "imgGal6 imgGal6 imgGal7 imgGal8";
+    "im1 im2 im3"
+    "im4 im5 im6"
+    ;
 }
 
-.imgGal1 { grid-area: imgGal1; }
-.imgGal2 { grid-area: imgGal2; }
-.imgGal3 { grid-area: imgGal3; }
-.imgGal4 { grid-area: imgGal4; }
-.imgGal5 { grid-area: imgGal5; }
-.imgGal6 { grid-area: imgGal6; }
-.imgGal7 { grid-area: imgGal7; }
-.imgGal8 { grid-area: imgGal8; }
+.im1 { grid-area: im1; }
+.im2 { grid-area: im2; }
+.im3 { grid-area: im3; }
+.im4 { grid-area: im4; }
+.im5 { grid-area: im5; }
+.im6 { grid-area: im6; }
 
+
+/* AULAS */
+
+
+
+.divisionAulas {
+    margin: 10px 100px 0 20px;
+}
+
+.listaAulas a {
+    font-size: 1rem;
+}
+.listaAulas a:hover {
+    font-weight: bold;
+    background-color: #000000;
+    color: #ffff99;
+}
+
+.gridAulas {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.divisionAulas {
+    margin: 0px;
+}
+
+.aulasActivas {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    padding: 2px;
+}
+
+.aula {
+    padding: 0 5px;
+}
+
+/* ABOUT US */
 
 .titAboutUs {
     text-align: left;
@@ -174,13 +231,21 @@ h2 {
     right: 1rem;
 }
 
+.textAu {
+    color: #ffffff;
+    font-family: 'BioRhyme', serif;
+    font-size: 1rem;
+}
+
+
+/* FOOTER */
+
 footer {
     text-align: center;
-    background-color:  #262626;
+    background-color: #000000;
     color: white;
     padding: 2rem 2rem 2rem 2rem;
-    display: flex;
-    align-items: center;
+    border-style: groove;
 }
 
 footer p {
@@ -191,11 +256,75 @@ footer p {
 
 }
 
+.footerContenedor {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, auto);
+    justify-items: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.navFooter {
+    display: block;
+}
+
+.mediosDepago {
+    display: block
+}
+
+.contactoFooter {
+    display: block;
+}
+
+.redesSociales {
+    display: block;
+    text-align: center;
+}
+
+
+a.movil {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'BioRhyme', serif;
+    font-size: 0.75rem;
+}
+
+.contactoFooter span {
+    font-family: 'BioRhyme', serif;
+    font-size: 0.75rem;
+}
+
+.contactoFooter span:hover {
+    color: #ffff99;
+}
+
+.contactoFooter a:hover {
+    color: #ffff99;
+}
+
+.redesSociales a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.redesSociales a:hover {
+    color: #ffff99;
+}
+
 h3 {
-    text-align:left;
+    text-align:center;
     font-family: 'BioRhyme', serif;
     font-weight: bold;
+    font-size: 1rem;
+    color: #ffff99;
 }
+
+h4 {
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: 'BioRhyme', serif;
+}
+
 
 footer ul li { 
     text-align: left;
