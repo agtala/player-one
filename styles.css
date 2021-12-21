@@ -237,6 +237,15 @@ h5 {
     font-size: 1rem;
 }
 
+.cajaImgAu {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#imgAu {
+width: 43rem;
+}
 
 /* FOOTER */
 
