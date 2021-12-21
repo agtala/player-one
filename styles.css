@@ -247,6 +247,46 @@ h5 {
 width: 43rem;
 }
 
+
+/* CONTACTO */
+
+label {
+    color: #ffffff;
+    font-family: 'BioRhyme', serif;
+    display: inline-block;
+
+}
+
+.contenidoContacto {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 200px 0 200px;
+}
+
+#mapaContacto {
+    display: flex;
+}
+
+.formularioContacto {
+    display: grid;
+    justify-content: center;
+    margin: 30px 20px 0 20px;
+    text-align: center;
+}
+
+.row {
+    display: grid;
+    justify-content: center;
+}
+
+.formularioContacto div {
+    width: 100%;
+}
+
+button {
+    font-family: 'BioRhyme', serif;
+}
+
 /* FOOTER */
 
 footer {
